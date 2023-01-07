@@ -7,12 +7,17 @@
     .navigation__items:not(:last-child){
         margin-right: 50px;
     }
+    .navigation__list {
+        
+        display: inline-flex;
+    }
     
 
 }
 
 .navigation__link{
-    @extend %link;
+    
+    
 
     position: relative;
     display: flex;
@@ -33,9 +38,11 @@
 &:focus{
     color: var(--accent__color);}
 }
-.navigation__list {
-    @extend %list;
-    display: inline-flex;
+
+@media screen and (min-width: 1200px){
+    .navigation{
+        
+    }
 }
     
 

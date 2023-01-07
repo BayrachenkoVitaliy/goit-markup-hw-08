@@ -32,19 +32,19 @@
             ><span class="logo__web">Web</span>Studio
           </a>
         <nav class="navigation">
-          <ul class="navigation__list">
+          <ul class="navigation__list list">
             <li class="navigation__items">
-              <a class="navigation__link current " href="./index.html"
+              <a class="navigation__link link current " href="./index.html"
                 >Студія
               </a>
             </li>
             <li class="navigation__items">
-              <a class="navigation__link  " href="./portfolio_.html"
+              <a class="navigation__link link " href="./portfolio_.html"
                 >Портфоліо
               </a>
             </li>
             <li class="navigation__items">
-              <a class="navigation__link " href="">Контакти</a>
+              <a class="navigation__link link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -55,10 +55,11 @@
           </svg>
 
         </button>
-        <ul class="contact">
+        
+        <ul class="contact list">
           <li class="contact__items">
             <a
-              class="contact__link "
+              class="contact__link link "
               href="mailto:info@devstudio.com"
             >
               <svg   width="16" height="12">
@@ -70,15 +71,16 @@
             >
           </li>
           <li class="contact__items">
-            <a class="contact__link " href="tel:+380961111111">
+            <a class="contact__link link" href="tel:+380961111111">
               <svg  width="10" height="16">
-                <use href="./images/spraite_optimaze.svg#icon-close_40px-1"></use>
+                <use href="./images/spraite_optimaze.svg#icon-smartphone"></use>
               </svg>
 
               +38 096 111 11 11
             </a>
           </li>
         </ul>
+      
        </div>
        <!-- mobail-menu -->
 
@@ -166,23 +168,23 @@
         </div>
         
     </header>
-    <main>
+    <main class="maine">
 
 
       <!--     Hero-->
-      <!-- <section class="hero">
-        <div class="hero__conteiner">
+      <section class="hero">
+        <div class="hero__conteiner conteiner">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero__button " type="button" data-modal-open>Замовити послугу</button>
+          <button class="hero__button button" type="button" data-modal-open>Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
 
       <!--benefits-->
 
-      <!-- <section class="benefits">
-        <div class="benefits__conteiner">
+      <section class="benefits section">
+        <div class="benefits__conteiner conteiner">
           <h2 class=" visualy__hidden">Переваги</h2>
-          <ul class="benefits__list ">
+          <ul class="benefits__list list">
             <li class="benefits__items">
               <div class="benefits__picture">
                 <svg class="benefits__icon" >
@@ -239,18 +241,18 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Our Activity-->
 
-      <!-- <section class="activity ">
-        <div class="activity__conteiner">
+      <section class="activity section">
+        <div class="activity__conteiner onteiner">
           <h2 class="activity__title">Чим ми займаємося</h2>
-          <ul class="activity__list ">
+          <ul class="activity__list list">
             <li class="activity__items">
               <img
                 class="activity__img"
-                src="./images/saiteimg.jpg"
+                src="./images/desctop.jpg"
                 alt="Розробка сайтів"
                 width="370"
               />
@@ -261,7 +263,7 @@
             <li class="activity__items">
               <img
                 class="activity__img"
-                src="./images/Mobailimg.jpg"
+                src="./images/mobdod (1).jpg"
                 alt="Розробка мобільних додатків"
                 width="370"
               />
@@ -272,7 +274,7 @@
             <li class="activity__items">
               <img
                 class="activity__img"
-                src="./images/disainimg.jpg"
+                src="./images/desaing.jpg"
                 alt="Дизайн сатів"
                 width="370"
               />
@@ -282,24 +284,59 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
 
       <!------------------team-->
 
 
-      <!-- <section class="team">
-        <div class="team__conteiner">
+      <section class="team section">
+        <div class="team__conteiner conteiner">
           <h2 class="team__title">Наша команда</h2>
 
-          <ul class="team-list">
+          <ul class="team-list list">
             <li class="team-list__items">
-              <img
-                class="team__img"
-                src="./images/demynenko.jpg"
+              <picture>
+                <source srcset="/images/demiyanenko-desk.webp 1x,
+                /images_n/demiyanenko-desk@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
+                />
+                <source srcset="./images/demiyanenko-desk (1).jpg 1x,
+                /images-n/demiyanenko-desk@2x (1).jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                <source srcset="./imagestabopt/img-demyanenko-tab.webp 1x,
+                ./imagestabopt/img-demyanenko-top@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+                />
+                <source srcset="./imagestabopt/img-demyanenko-tab.jpg 1x,
+                ./imagestabopt/img-demyanenko-tab@2x.jpg 2x"
+                media="(min-width: 768px)"
+                />
+                
+                <source srcset="./imagesmobopt/img-demyanenko-mob.webp 1x,
+                ./imagesmobopt/img-demyanenko-mob@2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp"
+                
+                />
+                <source srcset="./imagesmobopt/img-demyanenko-mob.jpg 1x,
+                ./imagesmobopt/img-demyanenko-mob@2x.jpg 2x"
+                media="(max-width: 767px)"
+                />
+               
+                
+                
+                <img
+                src=""
                 alt="photodemynenko"
-                width="270"
-              />
+                class="team__img"
+                
+               />
+              </picture>
+              
               <div class="team-list__text-box">
                 <h3 class="team-list__name">Ігор Дем'яненко</h3>
                 <p class="team-list__description" lang="en">Product Designer</p>
@@ -359,12 +396,48 @@
               </div>
             </li>
             <li class="team-list__items">
-              <img
+              <picture>
+                <source srcset="/images/repina-desk.webp 1x,
+                /images_n/repina-desk@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
+                />
+                <source srcset="./images/repina-desk (1).jpg 1x,
+                /images-n/repina-desk@2x (1).jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                <source srcset="./imagestabopt/img-repina-tab.webp 1x,
+                ./imagestabopt/img-repina-tab@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+                />
+                <source srcset="./imagestabopt/img-demyanenko-tab.jpg 1x,
+                ./imagestabopt/img-demyanenko-tab@2x.jpg 2x"
+                media="(min-width: 768px)"
+                />
+                
+                <source srcset="./imagesmobopt/img-repina-mob.webp 1x,
+                ./imagesmobopt/img-repina-mob@2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp"
+                
+                />
+                <source srcset="./imagesmobopt/img-repina-mob.jpg 1x,
+                ./imagesmobopt/img-repina-mob@2x.jpg 2x"
+                media="(max-width: 767px)"
+                />
+               
+                
+                
+                <img
                 class="team__img"
-                src="./images/repina.jpg"
+                src=""
                 alt="photorepina"
-                width="270"
+                
+                
               />
+              </picture>
+             
               <div class="team-list__text-box">
                 <h3 class="team-list__name">Ольга Рєпіна</h3>
                 <p class="team-list__description" lang="en">Frontend Developer</p>
@@ -422,12 +495,47 @@
               </div>
             </li>
             <li class="team-list__items">
-              <img
+              <picture>
+                <source srcset="/images/tarasov.webp 1x,
+                /images_n/tarasov@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
+                />
+                <source srcset="./images/tarasov (1).jpg 1x,
+                /images-n/tarasov@2x (1).jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                <source srcset="./imagestabopt/img-tarasov-tab.webp 1x,
+                ./imagestabopt/img-tarasov-tab@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+                />
+                <source srcset="./imagestabopt/img-tarasov-tab.jpg 1x,
+                ./imagestabopt/img-tarasov-tab@2x.jpg 2x"
+                media="(min-width: 768px)"
+                />
+                
+                <source srcset="./imagesmobopt/img-tarasov-mob.webp 1x,
+                ./imagesmobopt/img-tarasov-mob@2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp"
+                
+                />
+                <source srcset="./imagesmobopt/img-tarasov-mob.jpg 1x,
+                ./imagesmobopt/img-tarasov-mob@2x.jpg 2x"
+                media="(max-width: 767px)"
+                />
+               
+                
+                
+                <img
                 class="team__img"
-                src="./images/tarasov.jpg"
+                src="./imagesmobopt/img-tarasov-mob.jpg"
                 alt="phototarasov"
-                width="270"
-              />
+                
+                />             
+              </picture>
+              
               <div class="team-list__text-box">
                 <h3 class="team-list__name">Микола Тарасов</h3>
                 <p class="team-list__description" lang="en">Marketing</p>
@@ -484,12 +592,44 @@
               </div>
             </li>
             <li class="team-list__items">
-              <img
+              <picture>
+                <source srcset="/images/yermakov.webp 1x,
+                /images/yermakov@2x.webp 2x"
+                media="(min-width: 1200px)"
+                type="image/webp"
+                />
+                <source srcset="./images/yermakov (1).jpg 1x,
+                /images/yermakov@2x (1).jpg 2x"
+                media="(min-width: 1200px)"
+                />
+                <source srcset="./imagestabopt/img-irmakov-tab.webp 1x,
+                ./imagestabopt/img-irmakov-tab@2x.webp 2x"
+                media="(min-width: 768px)"
+                type="image/webp"
+                />
+                <source srcset="./imagestabopt/img-irmakov-tab.jpg 1x,
+                ./imagestabopt/img-irmakov-tab@2x.jpg 2x"
+                media="(min-width: 768px)"
+                />
+                
+                <source srcset="./imagesmobopt/img-irmakov-mob.webp 1x,
+                ./imagesmobopt/img-irmakov-mob@2x.webp 2x"
+                media="(max-width: 767px)"
+                type="image/webp"
+                
+                />
+                <source srcset="./imagesmobopt/img-irmakov-mob.jpg 1x,
+                ./imagesmobopt/img-irmakov-mob@2x.jpg 2x"
+                media="(max-width: 767px)"
+                />
+                <img
                 class="team__img"
-                src="./images/ermakov.jpg"
+                src=""
                 alt="photoermakov"
-                width="270"
-              />
+                
+              />        
+              </picture>
+              
               <div class="team-list__text-box">
                 <h3 class="team-list__name">Михайло Єрмаков</h3>
                 <p class="team-list__description" lang="en">UI Designer</p>
@@ -541,51 +681,51 @@
           </ul>
         </div>
       </section>  
-    -->
+    
     
       <!-- partner company-->
 
-     <!--  <section class="partner">
-        <div class="partner__conteiner">
+      <section class="partner section">
+        <div class="partner__conteiner conteiner">
           <h2 class="partner__title">Постійні клієнти</h2>
 
-          <ul class="partner__list">
-            <li>
+          <ul class="partner__list list">
+            <li class="partner__items">
               <a href="" class="partner__link ">
                 <svg class="partner__logo" width="42" height="46">
                   <use href="./images/spraite_optimaze.svg#icon-group"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="partner__items">
               <a href="" class="partner__link ">
                 <svg class="partner__logo" width="40" height="52">
                   <use href="./images/spraite_optimaze.svg#icon-group1"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="partner__items">
               <a href="" class="partner__link ">
                 <svg class="partner__logo" width="44" height="42">
                   <use href="./images/spraite_optimaze.svg#icon-group2"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="partner__items">
               <a href="" class="partner__link ">
                 <svg class="partner__logo" width="84" height="40">
                   <use href="./images/spraite_optimaze.svg#icon-group3"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="partner__items">
               <a href="" class="partner__link ">
                 <svg class="partner__logo" width="62" height="46">
                   <use href="./images/spraite_optimaze.svg#icon-group4"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="partner__items">
               <a href="" class="partner__link ">
                 <svg class="partner__logo" width="94" height="44">
                   <use href="./images/spraite_optimaze.svg#icon-group5"></use>
@@ -595,7 +735,7 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main> 
 
 
     <!--footer-->
@@ -703,16 +843,16 @@
       </div>
     </footer> --> 
 
-    <!--backdrop-->
-    <!-- <div class="backdrop is-hidden " data-modal>
+   <!--backdrop-->
+     <div class="backdrop is-hidden " data-modal>
       <div class="modal">
         <button type="button" class="modal__btn" data-modal-close >
           <svg class="modal__icon" width="18px" height="18px">
             <use href="./images/spraite_optimaze.svg#icon-close"></use>
           </svg>
-        </button> -->
+        </button>
 <!--Modal Form-->
-        <!-- <form class="form-modal">
+        <form class="form-modal">
           <p class="form__title">
             Залиште свої дані, ми вам передзвонимо
           </p>
@@ -755,7 +895,7 @@
             <a class="consent__link " href="">Умови договору</a>
           </div>
             <button type="submit" class="button__form button">Відправити</button>
-        </form> -->
+        </form>
           </div>
     </div>
     <script src="./js/mobail.js"></script>

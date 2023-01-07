@@ -15,54 +15,149 @@
   </head>
   <body>
        <!-- header-->
-    <header class="header">
-      <div class="header__conteiner">
-        <a class=" logo logo__header" href="./index.html"
-            ><span class="logo__web">Web</span>Studio
-          </a>
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__items">
-              <a class="navigation__link  " href="./index.html"
-                >Студія
-              </a>
+       <header class="header">
+        <div class="header__conteiner conteiner">
+          <!-- <div class="header-mobail__conteiner"> -->
+          <a class=" logo logo__header" href="./index.html"
+              ><span class="logo__web">Web</span>Studio
+            </a>
+          <nav class="navigation">
+            <ul class="navigation__list list">
+              <li class="navigation__items">
+                <a class="navigation__link link  " href="./index.html"
+                  >Студія
+                </a>
+              </li>
+              <li class="navigation__items">
+                <a class="navigation__link link current " href="./portfolio_.html"
+                  >Портфоліо
+                </a>
+              </li>
+              <li class="navigation__items">
+                <a class="navigation__link link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <button type="button" class="header__mobail-btn" data-menu-open>
+            <svg class="header__mobail-icon" width="24px" height="16px">
+              <use href="./images/spraite_optimaze.svg#icon-menu_24px-1"></use>
+            </svg>
+  
+          </button>
+          
+          <ul class="contact list">
+            <li class="contact__items">
+              <a
+                class="contact__link link "
+                href="mailto:info@devstudio.com"
+              >
+                <svg   width="16" height="12">
+                  <use
+                    href="./images/spraite_optimaze.svg#icon-envelope-hover"
+                  ></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="navigation__items">
-              <a class="navigation__link current " href="./portfolio_.html"
-                >Портфоліо
+            <li class="contact__items">
+              <a class="contact__link link" href="tel:+380961111111">
+                <svg  width="10" height="16">
+                  <use href="./images/spraite_optimaze.svg#icon-smartphone"></use>
+                </svg>
+  
+                +38 096 111 11 11
               </a>
-            </li>
-            <li class="navigation__items">
-              <a class="navigation__link " href="">Контакти</a>
             </li>
           </ul>
-        </nav>
-        <ul class="contact">
-          <li class="contact__items">
-            <a
-              class="contact__link "
-              href="mailto:info@devstudio.com"
-            >
-              <svg  width="16" height="12">
-                <use
-                  href="./images/spraite_optimaze.svg#icon-envelope-hover"
-                ></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contact__items">
-            <a class="contact__link " href="tel:+380961111111">
-              <svg  width="10" height="16">
-                <use href="./images/spraite_optimaze.svg#icon-smartphone"></use>
-              </svg>
-
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
+        
+         </div>
+         <!-- mobail-menu -->
+  
+          <div class="mobail-menu is-open" data-menu>
+            <div class="mobail-menu__conteiner">
+              <nav class="mobail-menu__navigation">
+                <ul class="mobail-menu__list">
+                  <li class="mobail-menu__items">
+                    <a class="mobail-menu__link  " href="./index.html"
+                      >Студія
+                    </a>
+                  </li>
+                  <li class="mobail-menu__items">
+                    <a class="mobail-menu__link current " href="./portfolio_.html"
+                      >Портфоліо
+                    </a>
+                  </li>
+                  <li class="mobail-menu__items">
+                    <a class="mobail-menu__link" href="">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+              <ul class="mobail-menu__contact">
+                <li class="mobail-menu__items-contact">
+                  <a class="mobail-menu__link-contact mobail-menu__tel " href="tel:+380961111111">
+                    
+      
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="mobail-menu__items-contact">
+                  <a
+                    class="mobail-menu__link-contact "
+                    href="mailto:info@devstudio.com"
+                  >
+                    
+                    info@devstudio.com</a
+                  >
+                </li>
+                
+              </ul>
+              <ul class="mobail-social">
+                   
+                    
+  
+  
+                <li class="mobail-social__items">
+                  <a href="" class="mobail-social__link">
+                    Instagram
+                  </a>
+                </li>
+                
+                
+  
+  
+                <li class="mobail-social__items">
+                  <a href="" class="mobail-social__link">
+                    Twitter
+                  </a>
+                </li>
+  
+                
+                
+  
+                <li class="mobail-social__items">
+                  <a href="" class="mobail-social__link">
+                    Facebook 
+                  </a>
+                </li>
+                
+                
+  
+                <li class="mobail-social__items">
+                  <a href="" class="mobail-social__link">
+                    LinkedIn 
+                  </a>
+                </li>
+              </ul>
+              <button type="button" class="mobail-menu__close-btn" data-menu-close>
+                <svg class="mobail-menu__icone-close" width="18px" height="18px">
+                  <use href="./images/spraite_optimaze.svg#icon-close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          
+      </header>
    
  <!-- portfolio -->
      
@@ -381,5 +476,6 @@
     </form>
   </div>
 </footer>
+<script src="./js/mobail.js"></script>
   </body>
 </html>
