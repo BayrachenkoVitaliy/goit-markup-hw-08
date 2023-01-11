@@ -1,12 +1,11 @@
 .activity{
-    @extend %section;
+   
 }
 .activity__conteiner{
     display: flex;
     flex-direction: column;
     align-items: center;
-    @extend %conteiner;  
-}
+    }
 .activity__title {
     margin-bottom: 50px;
     text-align: center;
@@ -50,12 +49,19 @@
     color: var(--maine__color__light);
 }
 
-@media screen and (min-width: 480px){
+@media screen and (max-width: 767px){
 
     .activity{
       display: none;
     }  
   }
+@media screen and (min-width: 768px){
+    .activity{
+        display: none;
+      }  
+}
+
+
   @media screen and (min-width: 1200px){
     .activity{
         display:block;
