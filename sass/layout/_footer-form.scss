@@ -4,6 +4,7 @@
     align-items: center;
 }
 .footer-form__title{
+   
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -11,6 +12,7 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
     
     color: var(--maine__color__light);
 }
@@ -100,6 +102,9 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     .footer-form{
         margin-left: 94px;
         
+    }
+    .footer-form__title{
+        margin-right: auto;
     }
     .footer-form__field{
         width: 358px;

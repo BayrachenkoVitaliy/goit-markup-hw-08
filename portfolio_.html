@@ -162,8 +162,8 @@
  <!-- portfolio -->
      
     <main>
-      <section class="potrfolio">
-        <div class="potrfolio__conteiner"  >
+      <section class="potrfolio ">
+        <div class="potrfolio__conteiner conteiner"  >
            <!--navigation portfolio-->
           <ul class="potrfolio-nav__list">
             <li class="potrfolio-nav_items"> <button class="potrfolio-nav__button" type="button"> Усі</button>   </li>
@@ -174,13 +174,45 @@
           </ul>
                  <!--  experience -->
           
-          <ul class="experience">
+          <ul class="experience list">
             <li class="experience__items"  >
               <a class=" experience__link"  href="">
                 <div class="experience__box">
-                  <img  class="experience__img" 
-                  src="./images/технокрякimg.jpg" 
-                  alt="Illustration" width="370">
+                  <picture>
+                    <source srcset="./images/tehnokryk.webp 1x, ./images/tehnokryk@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"/>
+
+                    <source srcset="./images/tehnokryk (1).jpg 1x, ./images/tehnokryk@2x (1).jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+
+                    <source srcset="./imagestabopt/img-tehnokryk-tab.webp 1x,
+                    ./imagestabopt/img-tehnokryk-tab@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    />
+                    <source srcset="./imagestabopt/img-tehnokryk-tab.jpg 1x,
+                    ./imagestabopt/img-tehnokryk-tab@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    />
+                    
+                    <source srcset="./imagesmobopt/img-tehkryk-mob.webp 1x,
+                    ./imagesmobopt/img-tehkryk-mob@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    
+                    />
+                    <source srcset="./imagesmobopt/img-tehkryk-mob.jpg 1x,
+                    ./imagesmobopt/img-tehkryk-mob@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    />
+                    
+                    <img  class="experience__img" 
+                    src="./images/tehnokryk (1).jpg" 
+                    alt="Illustration" >
+                  </picture>
+                  
                   <div class="overley">
                     <p class="overley__text">
                       Ресурс пропонує комплексні 
@@ -199,7 +231,44 @@
             <li class="experience__items">
               <a class=" experience__link" href="">
                 <div class="experience__box">
-                  <img class="experience__img" src="./images/Постер_орлеанimg.jpg" alt="Illustration" width="370">
+                  <picture>
+                    <source srcset="/images/orlean.webp 1x,
+                    /images/orlean@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                    />
+                    <source srcset="./images/orlean (1).jpg 1x,
+                    /images/orlean@2x (1).jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <source srcset="./imagestabopt/img-orlean-tab.webp 1x,
+                    ./imagestabopt/img-orlean-tab@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                    />
+                    <source srcset="./imagestabopt/img-orlean-tab.jpg 1x,
+                    ./imagestabopt/img-orlean-tab@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                    />
+                    
+                    <source srcset="./imagesmobopt/img-nOrlean-mob.webp 1x,
+                    ./imagesmobopt/img-nOrlean-mob@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    
+                    />
+                    <source srcset="./imagesmobopt/img-nOrlean-mob.jpg 1x,
+                    ./imagesmobopt/img-nOrlean-mob@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                    />
+                    <img class="experience__img" 
+                    src="./images/orlean (1).jpg" 
+                    alt="Illustration" 
+                   >
+                    
+                   
+                  </picture>
+                  
                   <div class="overley">
                     <p class="overley__text">
                       Ресурс пропонує комплексні 
@@ -218,7 +287,44 @@
           <li class="experience__items">
             <a class=" experience__link" href="">
               <div class="experience__box">
-               <img class="experience__img" src="./images/ресторан_seefoodimg.jpg" alt="Illustration" width="370">
+                <picture>
+                  <source srcset="/images/seafood.webp 1x,
+                  /images/seafood@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  />
+                  <source srcset="./images/seafood (1).jpg 1x,
+                  /images/seafood@2x (1).jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                  <source srcset="./imagestabopt/img-seafood-tab.webp 1x,
+                  ./imagestabopt/img-seafood-tab@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  />
+                  <source srcset="./imagestabopt/img-seafood-tab.jpg 1x,
+                  ./imagestabopt/img-seafood-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  />
+                  
+                  <source srcset="./imagesmobopt/img-seafood-mob.webp 1x,
+                  ./imagesmobopt/img-seafood-mob@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                  
+                  />
+                  <source srcset="./imagesmobopt/img-seafood-mob.jpg 1x,
+                  ./imagesmobopt/img-seafood-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  />
+                  <img class="experience__img" 
+                  src="./images/seafood (1).jpg" 
+                  alt="Illustration" 
+                 >
+                  
+                 
+                </picture>
+               
             
                 <div class="overley">
             
@@ -241,7 +347,43 @@
           <li class="experience__items">
             <a class=" experience__link" href="">
               <div class="experience__box">
-               <img class="experience__img" src="./images/premier_проектimg.jpg" alt="Illustration" width="370">
+                
+                <picture>
+                  <source srcset="/images/prime (1).webp 1x,
+                  /images/prime@2x (1).webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  />
+                  <source srcset="./images/prime.jpg 1x,
+                  /images/prime@2x (1).jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                  <source srcset="./imagestabopt/img-prime-tab.webp 1x,
+                  ./imagestabopt/img-prime-tab@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  />
+                  <source srcset="./imagestabopt/img-prime-tab.jpg 1x,
+                  ./imagestabopt/img-prime-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  />
+                  
+                  <source srcset="./imagesmobopt/img-prime-mob.webp 1x,
+                  ./imagesmobopt/img-prime-mob@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                  
+                  />
+                  <source srcset="./imagesmobopt/img-prime-mob.jpg 1x,
+                  ./imagesmobopt/img-prime-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  />
+                  <img class="experience__img" 
+                  src="./images/prime (1).jpg" 
+                  alt="Illustration" 
+                 >
+                 </picture>
+               
             
                 <div class="overley">
             
@@ -263,7 +405,44 @@
           <li class="experience__items">
             <a class=" experience__link" href="">
               <div class="experience__box">
-               <img class="experience__img" src="./images/Проект_boxesimg.jpg" alt="Illustration" width="370">
+                <picture>
+                  <source srcset="/images/boxes.webp 1x,
+                  /images/boxes@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  />
+                  <source srcset="./images/boxes (1).jpg 1x,
+                  /images/border@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                  <source srcset="./imagestabopt/img-boxer-tab.webp 1x,
+                  ./imagestabopt/img-boxer-tab@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  />
+                  <source srcset="./imagestabopt/img-boxer-tab.jpg 1x,
+                  ./imagestabopt/img-boxer-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  />
+                  
+                  <source srcset="./imagesmobopt/img-boxes-mob.webp 1x,
+                  ./imagesmobopt/img-boxes-mob@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                  
+                  />
+                  <source srcset="./imagesmobopt/img-boxes-mob.jpg 1x,
+                  ./imagesmobopt/img-boxes-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  />
+                  <img class="experience__img" 
+                  src="./images/boxes (1).jpg" 
+                  alt="Illustration" >
+                  
+                  
+                 
+                </picture>
+               
             
                 <div class="overley">
             
@@ -286,7 +465,44 @@
           <li class="experience__items">
             <a class=" experience__link" href="">
               <div class="experience__box">
-               <img class="experience__img" src="./images/inspirationimg.jpg" alt="Illustration" width="370">
+                <picture>
+                  <source srcset="/images/border.webp 1x,
+                  /images/border@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  />
+                  <source srcset="./images/border.jpg 1x,
+                  /images/border@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                  <source srcset="./imagestabopt/imgberder-tab.webp 1x,
+                  ./imagestabopt/imgberder-tab@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  />
+                  <source srcset="./imagestabopt/imgberder-tab.jpg 1x,
+                  ./imagestabopt/imgberder-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  />
+                  
+                  <source srcset="./imagesmobopt/img-border-mob.webp 1x,
+                  ./imagesmobopt/img-border-mob@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                  
+                  />
+                  <source srcset="./imagesmobopt/img-border-mob.jpg 1x,
+                  ./imagesmobopt/img-border-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  />
+                  <img class="experience__img" 
+               src="./images/border.jpg" 
+               alt="Illustration" >
+                 >
+                  
+                 
+                </picture>
+               
                 <div class="overley">
             
                   <p class="overley__text">
@@ -309,7 +525,44 @@
           <li class="experience__items">
             <a class=" experience__link" href="">
               <div class="experience__box">
-               <img class="experience__img" src="./images/виданняimg.jpg" alt="Illustration" width="370">
+                <picture>
+                  <source srcset="/images/limited.webp 1x,
+                  /images/limited@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  />
+                  <source srcset="./images/limited (1).jpg 1x,
+                  /images/limited@2x (1).jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                  <source srcset="./imagestabopt/img-limited-tab.webp 1x,
+                  ./imagestabopt/img-limited-tab@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  />
+                  <source srcset="./imagestabopt/img-limited-tab.jpg 1x,
+                  ./imagestabopt/img-limited-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  />
+                  
+                  <source srcset="./imagesmobopt/img-edition-mob.webp 1x,
+                  ./imagesmobopt/img-edition-mob@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                  
+                  />
+                  <source srcset="./imagesmobopt/img-edition-mob.jpg 1x,
+                  ./imagesmobopt/img-edition-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  />
+                  <img class="experience__img" 
+                  src="./images/limited (1).jpg" 
+                  alt="Illustration" 
+                  >
+                  
+                 
+                </picture>
+              
                 <div class="overley">
             
                   <p class="overley__text">
@@ -332,7 +585,43 @@
           <li class="experience__items">
             <a class=" experience__link" href="">
               <div class="experience__box">
-               <img class="experience__img" src="./images/labimg.jpg" alt="Illustration" width="370">
+                <picture>
+                  <source srcset="/images/lab.webp 1x,
+                  /images/lab@2x (1).webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  />
+                  <source srcset="./images/lab (1).jpg 1x,
+                  /images/lab@2x (1).jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                  <source srcset="./imagestabopt/img-lab-tab.webp 1x,
+                  ./imagestabopt/img-lab-tab@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  />
+                  <source srcset="./imagestabopt/img-lab-tab.jpg 1x,
+                  ./imagestabopt/img-lab-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  />
+                  
+                  <source srcset="./imagesmobopt/img-lab-mob.webp 1x,
+                  ./imagesmobopt/img-lab-mob@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                  
+                  />
+                  <source srcset="./imagesmobopt/img-lab-mob.jpg 1x,
+                  ./imagesmobopt/img-lab-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  />
+                  <img class="experience__img" 
+               src="./images/lab (1).jpg" 
+               alt="Illustration">
+                  
+                 
+                </picture>
+               
                 <div class="overley">
             
                   <p class="overley__text">
@@ -355,7 +644,43 @@
           <li class="experience__items">
             <a class=" experience__link  " href="">
               <div class="experience__box">
-               <img class="experience__img" src="./images/growingimg.jpg" alt="Illustration" width="370">
+                <picture>
+                  <source srcset="/images/growing.webp 1x,
+                  /images/growing@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  />
+                  <source srcset="./images/growing (1).jpg 1x,
+                  /images/growing@2x (1).jpg 2x"
+                  media="(min-width: 1200px)"
+                  />
+                  <source srcset="./imagestabopt/img-growing-tab.webp 1x,
+                  ./imagestabopt/img-growing-tab@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  />
+                  <source srcset="./imagestabopt/img-growing-tab.jpg 1x,
+                  ./imagestabopt/img-growing-tab@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  />
+                  
+                  <source srcset="./imagesmobopt/img-grow-mob.webp 1x,
+                  ./imagesmobopt/img-grow-mob@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                  
+                  />
+                  <source srcset="./imagesmobopt/img-grow-mob.jpg 1x,
+                  ./imagesmobopt/img-grow-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  />
+                  <img class="experience__img" 
+               src="./images/growing (1).jpg" 
+               alt="Illustration" >
+                  
+                 
+                </picture>
+               
                 <div class="overley">
             
                   <p class="overley__text">
@@ -384,7 +709,7 @@
 
 <!--footer-->
 <footer class="footer">
-  <div class="footer__conteiner">
+  <div class="footer__conteiner conteiner">
     <div class="footer__box">
       <a class=" logo__footer logo " href="./index.html"
         ><span class="logo__web">Web</span>Studio
@@ -418,7 +743,7 @@
       <b class="communication__text "> приєднуйтесь </b>
 
       <ul class="social social__footer ">
-        <!--instagram-->
+        
         <li>
           <a href="" class="social__link-footer">
             <svg class="social__icon-footer" width="20" height="20">
@@ -428,7 +753,9 @@
             </svg>
           </a>
         </li>
-        <!--twitter-->
+       
+        
+
         <li>
           <a href="" class="social__link-footer">
             <svg class="social__icon-footer" width="20" height="20">
@@ -438,7 +765,9 @@
             </svg>
           </a>
         </li>
-        <!--facebook-->
+        
+        
+
         <li>
           <a href="" class="social__link-footer">
             <svg class="social__icon-footer" width="20" height="20">
@@ -448,7 +777,9 @@
             </svg>
           </a>
         </li>
-        <!--linkedin-->
+        
+        
+
         <li>
           <a href="" class="social__link-footer">
             <svg class="social__icon-footer" width="20" height="20">
@@ -460,12 +791,14 @@
         </li>
       </ul>
     </div>
+
+
     <!--Fotter_form-->
-    <form class="footer-form">
+   <form class="footer-form">
       <p class="footer-form__title">
         Підпишіться на розсилку
       </p>
-      <div >
+      <div class="footer-form__box" >
       <input class="footer-form__field" type="email" name="user-email" required placeholder="E-mail">
     <button class="button__footer-form button" 
     type="submit">Підписатися<svg class="footer-form__icon" width="24px" height="24px">
@@ -476,6 +809,7 @@
     </form>
   </div>
 </footer>
+
 <script src="./js/mobail.js"></script>
   </body>
 </html>

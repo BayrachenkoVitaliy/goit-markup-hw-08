@@ -1,6 +1,9 @@
 .backdrop {
+    position: fixed;
     top: 0;
     left: 0;
+
+    padding: 0 15px 0 15px;
     width: 100vw;
     height: 100vh;
     
@@ -15,4 +18,15 @@
     visibility: hidden;
     pointer-events: none;
     opacity: 0;
+}
+@media screen and (max-width:767px){
+    .backdrop{
+       padding-top: 94px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .backdrop{
+        padding-top: 208px;
+     } 
 }
