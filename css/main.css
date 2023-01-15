@@ -888,7 +888,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .experience__items {
-    width: 370p;
+    width: 370px;
   }
   .experience__box {
     max-width: 370px;
